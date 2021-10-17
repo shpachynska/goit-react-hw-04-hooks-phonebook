@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
-// import useLocalStorage from './hooks/useLocalStorage';
 import shortid from "shortid";
 import ContactList from "./components/ContactList/ContactList";
 import Filter from "./components/Filter/Filter";
@@ -68,7 +67,7 @@ export default function App() {
   return (
     <Container>
       <h1 className="title">Phonebook</h1>
-      <IconButton onClick={toggleModal}>
+      <IconButton onClick={toggleModal} aria-label="add contact">
         <AddIcon width="40" height="40" fill="#fff" />
       </IconButton>
 
